@@ -23,11 +23,9 @@ body {
     ) rgb(var(--background-start-rgb));
 }
 
-.lp-sections{
+.lp-sections {
     padding: 0 8px;
 }
-
-
 
 @layer utilities {
     .text-balance {
