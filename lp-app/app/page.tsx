@@ -1,6 +1,9 @@
 import Image from "next/image";
 
 export default function Home() {
+
+
+
     return (
         <main className=""  id="pgtop">
             <section className="lp-sections fv" >
