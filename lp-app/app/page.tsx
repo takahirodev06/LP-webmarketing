@@ -1,28 +1,36 @@
-import Image from "next/image";
-
 export default function Home() {
-
-
+    const img = "/assets/Mask group.png"
 
     return (
-        <main className=""  id="pgtop">
-            <section className="lp-sections fv" >
+        <main className="" id="pgtop">
+            <section className="lp-sections fv">
                 <p>在仏の事業者様へ</p>
-                <h1> webを活用してあなたのビジネスをもっと伸ばすビジネスパートナー </h1>
+                <h1>webを活用して <br/> あなたのビジネスを <br/> <span>もっと</span>伸ばす <br/>デジタルパートナー</h1>
             </section>
             <section className="lp-sections cta01">
-                <p>まずはお悩みを聞かせてください</p>
-                <p>初回から出し惜しみせずお答えします。</p>
-                <a href="">1ｈ無料相談</a>
-                <p>メールまたはお問い合わせフォームから</p>
-                <a href="">サポートお申込み</a>
+                <div className="cta01_box">
+                    <p>まずはお悩みを聞かせてください</p>
+                    <p>初回から出し惜しみせずお答えします。</p>
+                    <a href="">1ｈ無料相談</a>
+                </div>
+                <div className="cta01_box">
+                    <p>メールまたはお問い合わせフォームから</p>
+                    <a href="">サポートお申込み</a>
+                </div>
+
             </section>
             <section className="lp-sections problem">
-                <p>宣伝活動をしたいけど、知見が足りない、、高い費用は使えない、、調べる時間がない、、</p>
-                <p>問い合わせ、予約管理、在庫管理をもっと簡単にしたい、、</p>
+                <p>宣伝活動をしたいけど、</p>
+
+                <p> 知見が足りない、、</p>
+                <p> 高い費用は使えない、、</p>
+                <p> 調べる時間がない、、</p>
+                <p></p>
+                <p>問い合わせ、予約管理、</p>
+                <p>在庫管理をもっと簡単にしたい</p>
             </section>
             <section className="lp-sections strength">
-                <p>プランに合わせたコストで運用可能100€~ / 月</p>
+                <p>プランに合わせたコストで運用可能 <span>100€~ / 月</span></p>
                 <p>初回無料の戦略相談</p>
                 <p>２か月のお試し運用(データ分析＋戦略実施)</p>
             </section>
@@ -61,7 +69,7 @@ export default function Home() {
             </section>
             <section className="lp-sections message">
                 <h2>フランスで頑張る 日本人を応援したい。</h2>
-                <p>  フランスでは、日本文化や日本製品が幅広い層に愛され、その人気は単なる一時のブームにとどまらず今も市場は拡大し続けています。ここパリでもたくさんの企業が様々なサービスを展開し、日本文化の素晴らしさを日々市民に伝えています。しかしながら、そのような企業をサポートできる環境はまだパリには少ないと感じます。私は、そんな企業がもっとITを活用することで、今の2倍、10倍の顧客にリーチでき、皆様のビジネスの目標を達成できる可能性があると信じています。
+                <p> フランスでは、日本文化や日本製品が幅広い層に愛され、その人気は単なる一時のブームにとどまらず今も市場は拡大し続けています。ここパリでもたくさんの企業が様々なサービスを展開し、日本文化の素晴らしさを日々市民に伝えています。しかしながら、そのような企業をサポートできる環境はまだパリには少ないと感じます。私は、そんな企業がもっとITを活用することで、今の2倍、10倍の顧客にリーチでき、皆様のビジネスの目標を達成できる可能性があると信じています。
                 </p>
             </section>
             <section className="lp-sections contact" id="contact">

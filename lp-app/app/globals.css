@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,7 @@
     --foreground-rgb: 33, 33, 33;
     --background-start-rgb: 255, 255, 255;
     --background-end-rgb: 250, 255, 255;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,21 +17,97 @@
     }
 }
 
-body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-            to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))
-    ) rgb(var(--background-start-rgb));
-}
-
-.lp-sections {
-    padding: 0 8px;
-}
-
 @layer utilities {
     .text-balance {
         text-wrap: balance;
     }
 }
+
+h1, h2, h3, h4, h5, h6, p, a, li, span {
+    font-family: "Noto Serif JP", serif;
+    color: #222222;
+}
+
+p {
+    font-size: 4vw;
+}
+
+.noto-serif-jp-regular {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .lp-sections {
+        min-height: 600px;
+    }
+
+    .fv {
+        position: relative;
+        background-image: url("/assets/Mask group.png");
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .fv p {
+        padding-top: 330px;
+        margin-left: 1rem;
+        font-weight: bold;
+    }
+
+    .fv h1 {
+        padding: 11px 0;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.66);
+    }
+
+    .cta01 {
+        text-align: center;
+    }
+
+    .cta01_box {
+        margin-bottom: 8px;
+    }
+
+    .cta01 .cta01_box p {
+
+    }
+
+    .cta01 .cta01_box a {
+        display: block;
+        padding: 13px 29px;
+        font-size: 1.2rem;
+        background-color: #99ff3a;
+    }
+
+    form * {
+        display: block;
+    }
+
+    form {
+        background-color: #aeaeae;
+    }
+}
+
+@media screen  and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 769px) {
+
+}
+
+
