@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Zen+Kaku+Gothic+New&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +9,7 @@
     --foreground-rgb: 33, 33, 33;
     --background-start-rgb: 255, 255, 255;
     --background-end-rgb: 250, 255, 255;
-
+    scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +39,17 @@ p {
     font-style: normal;
 }
 
+.zen-kaku-gothic-new-regular {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 @media screen and (max-width: 480px) {
 
@@ -50,32 +62,81 @@ p {
     }
 
     .lp-sections {
-        min-height: 600px;
+
+    }
+
+    .side-pdd {
+        padding: 0 24px 8rem;
     }
 
     .fv {
         position: relative;
-        background-image: url("/assets/Mask group.png");
+        background-image: url("/assets/fvbg01.png");
         background-size: cover;
         background-position: top center;
+        min-height: 500px;
     }
 
     .fv p {
-        padding-top: 330px;
-        margin-left: 1rem;
+        padding-top: 310px;
+        margin-left: 35%;
         font-weight: bold;
+        z-index: 5;
     }
 
     .fv h1 {
-        padding: 11px 0;
+        position: relative;
+        padding: 11px 0 11px 20%;
         font-weight: bold;
         text-align: center;
-        position: relative;
-        background-color: rgba(255, 255, 255, 0.66);
+        background-color: rgba(122, 255, 214, 0);
+        text-shadow: -1px -1px 1px #fff, 1px 1px 1px #fff, 1px -1px 1px #ffffff, -1px 1px 1px #fff;;
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        z-index: 5;
+    }
+
+    .txtrd {
+        color: #ff1818;
+        font-size: 1.5rem;
+    }
+
+    .txtbl {
+        color: #195cff;
+    }
+
+    .fv .hexagon {
+        width: 100px;
+        height: 176px;
+        position: absolute;
+        background: rgba(32, 248, 255, 0.8);
+        bottom: 0;
+        right: 20%;
+        z-index: 1;
+        transform: rotate(8deg) scale(0.9);
+    }
+
+    .fv .hexagon::before,
+    .fv .hexagon::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(32, 248, 255, 0.8);
+
+        z-index: 0;
+        transform: rotate(-60deg);
+    }
+
+    .fv .hexagon::before {
+        transform: rotate(60deg);
     }
 
     .cta01 {
+        padding: 2rem 0;
         text-align: center;
+
     }
 
     .cta01_box {
@@ -88,17 +149,191 @@ p {
 
     .cta01 .cta01_box a {
         display: block;
+        margin: 0 auto;
+        width: 80%;
         padding: 13px 29px;
         font-size: 1.2rem;
         background-color: #99ff3a;
+        border-radius: 24px;
+    }
+
+    .cta01 .cta01_box:nth-child(2) a {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        padding: 13px 29px;
+        font-size: 1.2rem;
+        background-color: #ff9d5b;
+        border-radius: 24px;
+    }
+
+    .problems {
+        position: relative;
+        padding: 2rem 0;
+        background: linear-gradient(180deg, rgba(73, 73, 73, 0.8) 10%, rgba(172, 172, 172, 0.8) 100%);
+    }
+
+    .problems:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("/assets/28572716_m.webp");
+        z-index: -1;
+    }
+
+    .problems p {
+        margin: 2rem 1rem;
+        transform: rotate(-5deg);
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.4rem;
+        color: white;
+        text-shadow: 0 0 12px #000000;
+    }
+
+    .problems p:nth-child(even) {
+        transform: rotate(5deg);
+        text-align: right;
+    }
+
+    .problems img {
+        margin-left: 40%;
+        width: 50%;
+    }
+
+    .strength {
+        margin: 8rem 0;
+        position: relative;
+        padding: 2rem 0;
+    }
+
+    .strength p {
+        margin: 2rem 1rem;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.4rem;
+    }
+
+    .reason {
+    }
+
+    .service {
+    }
+
+    .service h3 {
+        margin-top: 2rem;
+    }
+
+    .service p {
+        margin-top: 0.8rem;
+    }
+
+    .service div {
+    }
+
+    .flow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flow_i {
+        padding: 1rem;
+    }
+
+    .flow_i h3 span {
+        margin-right: 16px;
+        font-size: 20vw;
+        color: #ff9d5b;
+    }
+
+    .flow_i:nth-child(3) h3 span {
+        color: #6495ff;
+    }
+
+    .flow_i:nth-child(4) h3 span {
+        color: #6cd174;
+    }
+
+    .flow_i:nth-child(5)  h3 span{
+        color: darkorchid;
+    }
+
+    .flow_i:nth-child(6) h3 span {
+        color: gold;
+    }
+
+    .flow_i:nth-child(7) h3 span {
+        color: cyan;
+    }
+
+    .message {
+        padding: 3rem 16% 8rem 6%;
+        background-image: url("/assets/parisky.png");
+        background-size: cover;
+        color: white;
+    }
+
+    .message * {
+        color: white;
+        text-shadow: 1px 1px 2px #222222;
+    }
+
+    .message p {
+        margin-top: 0.8rem;
     }
 
     form * {
         display: block;
+        width: 100%;
     }
 
     form {
-        background-color: #aeaeae;
+
+    }
+
+    form input[type="text"], form input[type="email"], form textarea {
+        margin-top: 1.5rem;
+        padding: 8px 1rem;
+        background-color: #eeeeee;
+        border-bottom: #777777 1px solid;
+    }
+
+    form input[type="text"]:focus, form input[type="email"]:focus, form textarea:focus,
+    form input[type="text"]:active, form input[type="email"]:active, form textarea:active {
+        border: 1px solid #686868;
+    }
+
+    form textarea {
+        min-height: 500px;
+    }
+
+    form button {
+        display: inline-block;
+        width: 66%;
+        margin: 1.5rem auto 0;
+        padding: 1rem 3rem;
+        border: 3px solid #6cd174;
+        border-radius: 24px;
+        background-color: #ffffff;
+    }
+
+    form img {
+        display: inline-block;
+        height: 24px;
+        width: auto;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #0e1233;
+    }
+
+    footer p {
+        font-size: .6rem;
+        color: white;
     }
 }
 
