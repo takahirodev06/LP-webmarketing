@@ -8,6 +8,7 @@ export default function Home() {
     const onSubmit = async () => {
 
     }
+
     return (
         <main className="" id="pgtop">
             <section className="fv">
@@ -39,7 +40,8 @@ export default function Home() {
                     在庫管理をもっと簡単にしたい、、、</p>
                 <img src={imgproblem}></img>
             </section>
-            <p className="sokode">そこで</p>
+            <p className="sokode">そんな事業者様へ</p>
+            <p className="sokode">webマーケティングサポート</p>
             <section className="lp-sections strength" id={"strength"}>
                 <p>プランに合わせた <br/>
                     コストで運用可能 <br/>
@@ -50,20 +52,21 @@ export default function Home() {
                     (データ分析＋戦略実施)</p>
             </section>
             <section className="lp-sections reason side-pdd" id={"reason"}>
-                <h2> Webマーケティングを導入するメリット</h2>
-              <p>
-                インターネットを閲覧している <span>全世界の人々</span>に <span>一斉に</span>アピールできることです。
-                ネット上では興味を持つ人々が集まって広告を見てくれるため、
-                <span>見込み客に効果的</span>見込み客に効果的にアプローチすることが可能です。
-                また、Webマーケティングの歴史はまだ浅く、
-                苦手意識があり参入できていない企業も多い現状です。
-                こうした企業がWeb戦略を取り入れることで大きな効果が期待できます。
-                近年伸びているサービスや店舗は必ずWebを<span>巧みに利用</span>しています。
-                しかし、何も知らない状況から調べて実行できるような
-                時間的・コスト的な余裕がある企業は多くありません。
-                そこで、企業が自身の <span>スケールに合わせて</span>Webに関する相談を行い、
-                代わりに専門のWebマーケターに手を動かしてもらうことで、
-                <span>小さなコスト</span>でビジネスを成長させることができます。</p>
+                <h2> Webマーケティングを <br/>
+                    導入するメリット</h2>
+                <p>
+                    インターネットを閲覧している <span>全世界の人々</span>に <span>一斉に</span>アピールできることです。
+                    ネット上では興味を持つ人々が集まって広告を見てくれるため、
+                    <span>見込み客に効果的</span>見込み客に効果的にアプローチすることが可能です。
+                    また、Webマーケティングの歴史はまだ浅く、
+                    苦手意識があり参入できていない企業も多い現状です。
+                    こうした企業がWeb戦略を取り入れることで大きな効果が期待できます。
+                    近年伸びているサービスや店舗は必ずWebを<span>巧みに利用</span>しています。
+                    しかし、何も知らない状況から調べて実行できるような
+                    時間的・コスト的な余裕がある企業は多くありません。
+                    そこで、企業が自身の <span>スケールに合わせて</span>Webに関する相談を行い、
+                    代わりに専門のWebマーケターに手を動かしてもらうことで、
+                    <span>小さなコスト</span>でビジネスを成長させることができます。</p>
             </section>
             <section className="lp-sections service side-pdd" id={"service"}>
                 <h2>サービス内容</h2>
@@ -72,7 +75,8 @@ export default function Home() {
                         顧客が御社に興味を持った時、知りたい情報が見やすくまとまったサイトがあると購買行動に繋がります。
                         ウェブサイトを持っていることで会社に対しての信頼も高まり、ブランドの雰囲気を直接体感してもらうことができます。
                         シーズン限定のキャンペーンページや、ホームページ改修もぜひご相談ください。
-                    </p></div>
+                    </p>
+                </div>
 
                 <div><h3>SEO対策</h3>
                     <p>グーグル検索結果に上位表示されるような施策を行います。
@@ -83,13 +87,14 @@ export default function Home() {
                     <p>グーグルマップで検索されたときに上位表示される施策を行います。
                         実店舗がある業態ではSEOよりも重視されることもある指標です。
                         まだ認知のない顧客にも、マップから見つけてもらうと来店率が上がります。
-                    </p></div>
+                    </p>
+                </div>
                 <div><h3>既存ウェブサイトの解析・更新・改善</h3>
                     <p>企業様が現在運営されているサイトの分析を行い、
                         弱点を改善することでサイトの有効性を高めます。</p>
 
                     <p>サイトリニューアルを実施することで新しいイメージをつくりだし、既存のサービスや商品を広めることができます。
-                    サイトに最新の情報があると会社の信頼性もあがります。</p>
+                        サイトに最新の情報があると会社の信頼性もあがります。</p>
 
                 </div>
                 <div><h3>SNS運用コンテンツ作成・原稿作成</h3>
@@ -133,14 +138,56 @@ export default function Home() {
                     皆様のビジネスの目標を達成できる可能性があると信じています。</p>
             </section>
             <section className="lp-sections contact side-pdd" id="contact">
-                <h2>お申込み</h2>
-                <form action="post">
-                    <input type="text" placeholder={"企業さま名"}/>
-                    <input type="text" placeholder={"担当者さま氏名"}/>
-                    <input type="email" placeholder={"メールアドレス"}/>
-                    <textarea placeholder={"メッセージ本文"}/>
-                    <button type="submit"><img src={imgsend} alt=""/> 送信する</button>
-                </form>
+                <div className="tabs">
+                    <input id="all" type="radio" name="tab_item" defaultChecked/>
+                    <label className="tab_item" htmlFor="all">1ｈ相談お申込み</label>
+                    <input id="programming" type="radio" name="tab_item"/>
+                    <label className="tab_item" htmlFor="programming">お問い合わせ</label>
+                    <div className="tab_content" id="all_content">
+                        <h2>1ｈ相談お申込み</h2>
+                        <form action="post">
+                            <input type="text" placeholder={"企業さま名"}/>
+                            <input type="text" placeholder={"担当者さま氏名"}/>
+                            <input type="email" placeholder={"メールアドレス"}/>
+                            <label htmlFor="">現在のお悩みは</label>
+                            <textarea placeholder={"メッセージ本文"}/>
+                            <p>対面またはオンライン面談の <br/>どちらをご希望でしょうか？</p>
+                            <p>
+                                <label htmlFor=""><input type="checkbox"/>対面(パリ近郊)</label>
+                                <label htmlFor=""><input type="checkbox"/>オンライン面談</label></p>
+                            <p>サイトはお持ちですか？</p>
+                            <p>
+                                <label htmlFor=""><input type="checkbox"/>ある</label>
+                                <label htmlFor=""><input type="checkbox"/>ない</label>
+                            </p>
+
+                            <p>現在弊社で運用しているSNSはお持ちでしょうか？</p>
+                            <p>
+                                <label htmlFor=""><input type="checkbox"/>ある</label>
+                                <label htmlFor=""><input type="checkbox"/>ない</label></p>
+
+                            <p>SEOやMEOについて調べた経験はありますか？</p>
+                            <p>
+                                <label htmlFor=""><input type="checkbox"/>ある</label>
+                                <label htmlFor=""><input type="checkbox"/>ない</label>
+                            </p>
+                            <button type="submit"> 送信<img src={imgsend} alt=""/></button>
+                        </form>
+                    </div>
+                    <div className="tab_content" id="programming_content">
+                        <h2>お問い合わせ</h2>
+                        <form action="post">
+                            <input type="text" placeholder={"企業さま名"}/>
+                            <input type="text" placeholder={"担当者さま氏名"}/>
+                            <input type="email" placeholder={"メールアドレス"}/>
+                            <textarea placeholder={"メッセージ本文"}/>
+                            <button type="submit"> 送信<img src={imgsend} alt=""/></button>
+                        </form>
+                    </div>
+
+                </div>
+
+
             </section>
             <footer>
                 <p>ヤマダウェブクリエイション </p>
